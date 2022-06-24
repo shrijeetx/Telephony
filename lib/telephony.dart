@@ -574,6 +574,25 @@ class SmsMessage {
   SmsType? type;
   SmsStatus? status;
   String? serviceCenterAddress;
+  bool? isSavedContact;
+  String? displayName;
+
+  SmsMessage(
+      {this.id,
+        this.address,
+        this.read,
+        this.type,
+        this.body,
+        this.date,
+        this.subscriptionId,
+        this.status,
+        this.dateSent,
+        this.seen,
+        this.subject,
+        this.threadId,
+        this.displayName,
+        this.isSavedContact,
+      this.serviceCenterAddress});
 
   /// ## Do not call this method. This method is visible only for testing.
   @visibleForTesting
